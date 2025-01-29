@@ -2,7 +2,6 @@
     --primary-color: #e3f6f5;
     --secondary-color: #FFFFFF;
     --tertiary-color: #272343;
-    --accent-color: #bae8e8;
 
     background-color: var(--primary-color);
     color: var(--tertiary-color);
@@ -22,7 +21,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
 }
 
 /* Sign-up box container */
@@ -31,17 +30,18 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 400px;
     background-color: var(--secondary-color);
     border-radius: 25px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    padding: 30px;
+    padding: 50px;
 }
 
-.sign-up-box h1 {
-    font-size: 24px;
-    color: var(--tertiary-color);
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
+
 
 /* Form styling */
 .input-fields {
@@ -49,8 +49,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 20px;
-    position: relative;
-
 }
 
 /* Input containers */
@@ -64,8 +62,8 @@ body {
     width: 100%;
     padding: 15px;
     position: relative;
-    border-radius: 20px;
-    font-size: 16px;
+    border-radius: 15px;
+    border: 2px solid var(--primary-color);
     transition: border-color 0.3s ease-in-out;
 }
 
@@ -75,6 +73,7 @@ body {
     left: 25px;
     top: 50%;
     transform: translateY(-50%);
+    outline: none;
     pointer-events: none;
     background-color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
@@ -88,12 +87,14 @@ body {
     padding: 0 5px;
 }
 
-
+/* Button Styling */
 button {
     width: 100%;
-    max-width: 300px;
-    height: 40px;
-    border-radius: 30px;
+    height: 50px;
+    border-radius: 15px;
     border: none;
-    background-color: var(--accent-color);
+    background-color: var(--tertiary-color);
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
