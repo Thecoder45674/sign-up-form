@@ -42,7 +42,6 @@ form {
     gap: 20px;
 }
 
-
 /* Form styling */
 .input-fields {
     width: 100%;
@@ -77,7 +76,6 @@ form {
     pointer-events: none;
     background-color: var(--secondary-color);
     transition: all 0.3s ease-in-out;
-    
 }
 
 /* Move label when input is focused or has text */
