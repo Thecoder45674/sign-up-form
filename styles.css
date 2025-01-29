@@ -1,24 +1,99 @@
 :root {
-    --primary-color:#F5DEB3;
+    --primary-color: #e3f6f5;
     --secondary-color: #FFFFFF;
+    --tertiary-color: #272343;
+    --accent-color: #bae8e8;
+
     background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 body {
     display: flex;
-    height: 100vh;
+    width: 100%;
+    min-height: 100vh;
     align-items: center;
     justify-content: center;
     text-align: center;
-    margin: 0px;
-    padding: 0px;
+    padding: 20px;
 }
 
+/* Sign-up box container */
 .sign-up-box {
+    position: relative;
     display: flex;
     flex-direction: column;
+    gap: 20px;
+    max-width: 400px;
     background-color: var(--secondary-color);
-    width: 400px;
-    height: 600px;
-    border-radius: 50px;
+    border-radius: 25px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+.sign-up-box h1 {
+    font-size: 24px;
+    color: var(--tertiary-color);
+}
+
+/* Form styling */
+.input-fields {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+
+}
+
+/* Input containers */
+.input-container {
+    position: relative;
+    width: 100%;
+}
+
+/* Input containers */
+.input-container input {
+    width: 100%;
+    padding: 15px;
+    position: relative;
+    border-radius: 20px;
+    font-size: 16px;
+    transition: border-color 0.3s ease-in-out;
+}
+
+/* Floating Labels */
+.input-container label {
+    position: absolute;
+    left: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    background-color: var(--secondary-color);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+/* Move label when input is focused or has text */
+.input-container input:focus + label,
+.input-container input:not(:placeholder-shown) + label {
+    top: 0px;
+    padding: 0 5px;
+}
+
+
+button {
+    width: 100%;
+    max-width: 300px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background-color: var(--accent-color);
 }
