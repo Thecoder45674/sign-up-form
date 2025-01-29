@@ -12,7 +12,7 @@
     <div class="sign-up-box">
         <h1>Sign Up</h1>
         <p>Let's get started with your 30 days free trial</p>
-        <form action="example.com/path" method="post">
+        <form action="https://httpbin.org/post" method="post">
             <div class="input-fields">
                 <div class="input-container">
                     <input type="text" id="name" placeholder=" " required>
@@ -23,7 +23,7 @@
                     <label for="email">Email</label>
                 </div>
                 <div class="input-container">
-                    <input type="password" id="password" placeholder=" " required>
+                    <input type="password" id="password" placeholder=" " minlength="8" maxlength="16">
                     <label for="password">Password</label>
                 </div>
             </div>
